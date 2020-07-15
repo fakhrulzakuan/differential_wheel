@@ -1,12 +1,9 @@
 #!/usr/bin/env python
 
-""" ARS408 ROS Driver
+""" differential_wheel
 # Python 2.7
 # Author : Fakhrul Zakuan
-# Email : razi@moovita.com
-# Department : eMooVit, MY
-# Last modified: 1-April-2020
-# version comments - Almost done
+# Email : fakhrulzakuan@gmail.com
 """
 
 import rospy

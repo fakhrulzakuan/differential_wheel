@@ -1,12 +1,9 @@
 #!/usr/bin/env python
 
-""" ARS408 ROS Driver
+""" differential_wheel
 # Python 2.7
 # Author : Fakhrul Zakuan
-# Email : razi@moovita.com
-# Department : eMooVit, MY
-# Last modified: 1-April-2020
-# version comments - Almost done
+# Email : fakhrulzakuan@gmail.com
 """
 
 import rospy
@@ -22,7 +19,6 @@ import numpy as np
 np.set_printoptions(threshold=3)
 np.set_printoptions(suppress=True)
 from numpy import genfromtxt
-
 
 class MotionInput:
 
@@ -64,7 +60,6 @@ class MotionInput:
 
         self.ang_vel_raw_pub.publish(av_raw)
         
-        # time.sleep(0.5)
         alpha  = 0.2 #0 - 1
         self.est_ang_vel = alpha * ang_vel + (1-alpha) * self.prev_ang_vel
 
